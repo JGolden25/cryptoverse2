@@ -6,12 +6,12 @@ const cryptoNewsHeaders = {
     'x-rapidapi-key': '2a2b9f6944mshbf489b5d1d29da5p18ae92jsn56deaf55fa53'
 }
 
-const baseUrl = 'https://bing-news-search1.p.rapidapi.com'
+const baseUrl = 'https://bing-news-search1.p.rapidapi.com';
 
 const createRequest = (url) => ({ url, headers: cryptoNewsHeaders })
 
 export const cryptoNewsApi = createApi({
-    reducerPath: 'cryptoApi',
+    reducerPath: 'cryptoNewsApi',
     baseQuery: fetchBaseQuery({ baseUrl }),
     endpoints: (builder) => ({
         getCryptoNews: builder.query({
